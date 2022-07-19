@@ -1,0 +1,73 @@
+.n-wrapper {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: left;
+}
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  gap: 8rem;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+.n-list {
+  flex: 1;
+}
+
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+/* .n-list > ul > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+} */
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.n-button {
+  /* flex: 0.5; */
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
+
+/* @media only screen and (min-width: 320px) {
+} */
+
+/* Extra Small Devices, Phones */
+/* @media only screen and (min-width: 480px) {
+} */
+
+/* Small Devices, Tablets */
+/* @media only screen and (min-width: 768px) {
+} */
+
+/* Medium Devices, Desktops */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Large Devices, Wide Screens */
+/* @media only screen and (min-width: 1200px) {
+} */
