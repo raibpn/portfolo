@@ -14,8 +14,11 @@ const intro = () => {
           <span>Hi! I Am</span>
           <span>Bipin</span>
           <span>
-            This kdsf kadfj lajdfj ajldjflajadjflj afdflajdfljajlfjaljdfal
-            akjdlfjal aldjflajdljfaldjfljaldjfjkepweflj
+            Lorem ipsum dolor sit amet consectetur adipisicing elit . Delectus,
+            vitae autem minima quasi, quibusdam doloremque
+            <br /> fuga numquam necessitatibus nobis aliquam aperiam! Officiis
+            nam officia <br />
+            facilis ex, amet blanditiis temporibus quo!
           </span>
         </div>
         <button className="button i-button">Hire me</button>
@@ -57,9 +60,15 @@ const intro = () => {
         </div>
       </div>
       <div className="i-right">
-        <div>
-          <FloatingDiv />
+        <div className="i-floating-div">
+          <div className="web">
+            <FloatingDiv txt1="Web" txt2="Developer" />
+          </div>
+          <div className="designer">
+            <FloatingDiv txt1="Designer" />
+          </div>
         </div>
+
         <div className="i-image">
           <img className="img-bipin" src={Bipin} alt="bipin" />
         </div>

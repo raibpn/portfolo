@@ -1,11 +1,12 @@
 import React from "react";
+import "./floating.css";
 
-const floating = () => {
+const floating = ({ txt1, txt2 }) => {
   return (
     <div className="floatingDiv">
-      <img src="" alt="" />
+      {/* <img src="" alt="" /> */}
       <span>
-        Web <br /> Developer
+        {txt1} <br /> {txt2}
       </span>
     </div>
   );

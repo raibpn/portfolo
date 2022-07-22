@@ -26,6 +26,7 @@
 }
 .n-list {
   flex: 1;
+  margin-left: 15px;
 }
 
 .n-list > ul {
@@ -45,6 +46,7 @@
   /* flex: 0.5; */
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 480px) {
