@@ -3,6 +3,7 @@
   --orange: #fca61f;
   --black: #242d49;
   --gray: #788097;
+  --skyBlue: #87ceeb;
   --blueCard: #ddf8fe;
   --purple: rgb(238 210 255);
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
@@ -28,6 +29,18 @@
   background: white;
   cursor: pointer;
   color: var(--orange);
+}
+.blur {
+  position: absolute;
+  width: 42rem;
+  height: 14rem;
+  border-radius: 40%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
 }
 @media screen and (max-width: 480px) {
   .App {

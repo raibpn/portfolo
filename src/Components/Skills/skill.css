@@ -2,7 +2,7 @@
   display: flex;
   padding: 0 1.5rem 0 1.5 rem;
   height: 60vh;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -10,9 +10,10 @@
   display: flex;
   flex: 2;
   flex-direction: column;
-  margin-right: 25px;
+  margin-right: 5rem;
   position: relative;
   gap: 1rem;
+  margin-top: 3rem;
 }
 .s-left > :nth-child(1) {
   color: var(--black);
@@ -29,6 +30,8 @@
   display: flex;
   flex: 1;
   gap: 1rem;
+  position: relative;
+  margin-left: 4rem;
 }
 
 .cv-button {
@@ -42,4 +45,13 @@
 
 .cards > * {
   position: absolute;
+}
+.s-blur2 {
+  left: 5rem;
+  top: 8rem;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: 18rem;
 }

@@ -14,7 +14,7 @@
   padding: 0px 26px 2px 26px;
 }
 
-.card span:nth-last-of-type(2) {
+.card span:nth-of-type(2) {
   color: var(--gray);
-  font-size: 20px;
+  font-size: 15px;
 }
