@@ -11,8 +11,8 @@ const intro = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi! I Am</span>
-          <span>Bipin</span>
+          <span>About</span>
+          <span>Me</span>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit . Delectus,
             vitae autem minima quasi, quibusdam doloremque

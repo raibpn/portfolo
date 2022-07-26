@@ -11,10 +11,12 @@
   display: flex;
   gap: 2rem;
   justify-content: left;
+  flex-direction: row;
 }
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
+  /* margin-top: auto; */
 }
 .n-right {
   display: flex;

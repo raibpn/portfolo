@@ -2,12 +2,11 @@ import React from "react";
 import Toggle from "../Toggle";
 import "./navbar.css";
 
-
 const navbar = () => {
   return (
     <div className="n-wrapper">
       <div className="n-left">
-        <div className="n-name">Bipin</div>
+        <div className="n-name">Portfolio</div>
         <Toggle />
       </div>
       <div className="n-right">
