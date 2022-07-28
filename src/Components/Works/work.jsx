@@ -9,6 +9,7 @@ import {
   faAngular,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+// import Resume from "../../images/Resume.pdf";
 
 const work = () => {
   return (
@@ -23,6 +24,9 @@ const work = () => {
           <br /> temporibus quo!
         </span>
         <button className="button cv-button">Download CV</button>
+        {/* <a href={Resume} download>
+          <button className="button cv-button">Download CV</button>
+        </a> */}
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="stage-cube-cont">

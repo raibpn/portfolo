@@ -10,16 +10,18 @@
   left: 5rem;
   top: 8rem;
 }
-
+.s-left {
+  margin-left: 4rem;
+}
 .s-blur1 {
   top: 10rem;
   left: 10rem;
   border-radius: 100%;
 }
 .stage-cube-cont {
-  width: 50%;
+  width: 60%;
   height: 100%;
-  padding-top: 2rem;
+  padding-top: 4rem;
   margin-left: 0;
   position: relative;
   /* right: 0; */
@@ -36,8 +38,8 @@
 }
 .cubespinner > div {
   position: absolute;
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: 200px;
   border: 1px solid #ccc;
   background: rgba(56, 162, 237, 0.4);
   text-align: center;

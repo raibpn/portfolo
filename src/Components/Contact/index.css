@@ -1,17 +1,16 @@
 .contact-form {
-  padding: 0 3rem 0 3rem;
+  padding: 0 3rem 2rem 3rem;
   display: flex;
   height: 60vh;
   /* scroll */
   padding-top: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 .cont-left {
   display: flex;
   gap: 0.5rem;
   flex: 1;
-  margin-right: 1rem;
-  margin-top: 4rem;
-  margin-left: 1rem;
   position: relative;
 }
 
@@ -31,7 +30,7 @@
   justify-content: center;
   position: relative;
   flex: 1;
-  margin-right: 1rem;
+  margin-bottom: 5rem;
 }
 .cont-right > form {
   display: flex;
