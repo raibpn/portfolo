@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  height: 30vh;
-  margin-bottom: 3rem;
+  height: 50vh;
+  margin-bottom: 10rem;
 }
 
 .achievement {
@@ -30,7 +30,7 @@
 .circle::before {
   border-radius: 100%;
   content: "";
-  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+  background-image: linear-gradient(to bottom, #87e6fb 0%, #8e8a85 100%);
   top: -8px;
   left: -8px;
   bottom: -8px;

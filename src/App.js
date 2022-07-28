@@ -6,7 +6,7 @@ import Skill from "./Components/Skills/skill";
 import Experience from "./Components/Experience/experience";
 import Work from "./Components/Works/work";
 import Contact from "./Components/Contact/index";
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 export const ThemeContext = React.createContext();
 
@@ -27,9 +27,9 @@ function App() {
       <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
         <Navbar />
         <Intro />
-        <Skill />
-        <Experience />
         <Work />
+        <Experience />
+        <Skill />
         <Contact />
       </ThemeContext.Provider>
     </div>
