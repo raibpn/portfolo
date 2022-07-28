@@ -46,7 +46,7 @@ const Contact = () => {
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
+            style={{ background: "#ABF1FF94" }}
           ></div>
         </form>
       </div>

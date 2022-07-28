@@ -3,7 +3,7 @@
   padding: 0 1.5rem 0 1.5 rem;
   height: 80vh;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .s-left {
@@ -26,26 +26,18 @@
   font-weight: 100;
 }
 
-.cards {
-  display: flex;
-  flex: 1;
-  gap: 1rem;
-  position: relative;
-  margin-left: 4rem;
-}
-
 .cv-button {
   width: 6.5rem;
   height: 2rem;
 }
 
-.cards {
-  position: relative;
+.resume > img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 10rem;
+  margin-top: 2rem;
 }
 
-.cards > * {
-  position: absolute;
-}
 .s-blur2 {
   left: 5rem;
   top: 8rem;

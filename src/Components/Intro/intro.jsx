@@ -1,6 +1,7 @@
 import React from "react";
 import "./intro.css";
 import Github from "../../images/github.png";
+import Github1 from "../../images/github1.png";
 import Insta from "../../images/insta.jpg";
 import Linkedin from "../../images/linkedin.png";
 import Bipin from "../../images/bipin.jpg";
@@ -21,7 +22,6 @@ const intro = () => {
             facilis ex, amet blanditiis temporibus quo!
           </span>
         </div>
-        <button className="button i-button">Hire me</button>
         <div className="i-icons">
           <a
             href="https://github.com/raibpn"
@@ -72,7 +72,7 @@ const intro = () => {
         <div className="i-image">
           <img className="img-bipin" src={Bipin} alt="bipin" />
         </div>
-        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+        <div className="blur" style={{ background: "rgb(225 210 240)" }}></div>
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
       </div>
     </div>
