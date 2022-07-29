@@ -9,17 +9,50 @@ import {
   faAngular,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-const work = () => {
+const Work = () => {
+  const { ref, inView } = useInView({ threshold: 0.4 });
   const transition = { duration: 2, type: "spring" };
+
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+
+  useEffect(() => {
+    console.log("use effect hook, inView: ", inView);
+    if (inView) {
+      animation.start({
+        x: "0.5px",
+        transition: { transition },
+      });
+    }
+    if (inView) {
+      animation2.start({
+        x: "0.5px",
+        transition: { transition },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-12rem",
+        transition: { transition },
+      });
+    }
+    if (!inView) {
+      animation2.start({
+        x: "12rem",
+      });
+    }
+  }, [inView]);
+
   return (
     <div className="works">
       <motion.div
-        initial={{ x: "-12rem" }}
-        whileInView={{ x: "0.5rem" }}
-        transition={transition}
+        animate={animation}
         className="s-left"
+        ref={ref}
       >
         <span>My Skills</span>
         <span>
@@ -33,10 +66,9 @@ const work = () => {
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
       </motion.div>
       <motion.div
-        initial={{ x: "12rem" }}
-        whileInView={{ x: "0.5px" }}
-        transition={transition}
+        animate={animation2}
         className="stage-cube-cont"
+        ref={ref}
       >
         <div className="cubespinner">
           <div className="face1">
@@ -91,4 +123,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;
