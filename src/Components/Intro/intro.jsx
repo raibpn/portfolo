@@ -1,13 +1,18 @@
 import React from "react";
 import "./intro.css";
 import Github from "../../images/github.png";
-import Github1 from "../../images/github1.png";
+// import Github1 from "../../images/github1.png";
 import Insta from "../../images/insta.jpg";
 import Linkedin from "../../images/linkedin.png";
 import Bipin from "../../images/bipin.jpg";
 import FloatingDiv from "../FloatingDiv/floating";
+// import ScrollMotion from "../ScrollMotion/index";
+import { motion } from "framer-motion";
 
-const intro = () => {
+const Intro = () => {
+  // Transition
+  const transition = { duration: 2, type: "spring" };
+
   return (
     <div className="intro">
       <div className="i-left">
@@ -61,12 +66,22 @@ const intro = () => {
       </div>
       <div className="i-right">
         <div className="i-floating-div">
-          <div className="web">
+          <motion.div
+            initial={{ top: "-4%", right: "64%" }}
+            whileInView={{ left: "-25%" }}
+            transition={transition}
+            className="web"
+          >
             <FloatingDiv txt1="Web" txt2="Developer" />
-          </div>
-          <div className="designer">
+          </motion.div>
+          <motion.div
+            initial={{ top: "-4%", left: "12rem" }}
+            whileInView={{ left: "3%" }}
+            transition={transition}
+            className="designer"
+          >
             <FloatingDiv txt1="Designer" />
-          </div>
+          </motion.div>
         </div>
         {/*blur divs*/}
         <div className="i-image">
@@ -79,4 +94,4 @@ const intro = () => {
   );
 };
 
-export default intro;
+export default Intro;

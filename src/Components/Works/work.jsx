@@ -9,11 +9,18 @@ import {
   faAngular,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const work = () => {
+  const transition = { duration: 2, type: "spring" };
   return (
     <div className="works">
-      <div className="s-left">
+      <motion.div
+        initial={{ x: "-12rem" }}
+        whileInView={{ x: "0.5rem" }}
+        transition={transition}
+        className="s-left"
+      >
         <span>My Skills</span>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
@@ -24,8 +31,13 @@ const work = () => {
         </span>
         <button className="button cv-button">Hire Me</button>
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
-      </div>
-      <div className="stage-cube-cont">
+      </motion.div>
+      <motion.div
+        initial={{ x: "12rem" }}
+        whileInView={{ x: "0.5px" }}
+        transition={transition}
+        className="stage-cube-cont"
+      >
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon
@@ -74,7 +86,7 @@ const work = () => {
           className="blur s-blur1"
           style={{ background: "var(--skyBlue)" }}
         ></div>
-      </div>
+      </motion.div>
     </div>
   );
 };

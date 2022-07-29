@@ -3,11 +3,19 @@ import "./skill.css";
 import Card from "../Card/card";
 import Resume from "../../images/Resume.pdf";
 import resume from "../../images/resume.png";
+import { motion } from "framer-motion";
 
 const skill = () => {
+  const transition = { duration: 2, type: "spring" };
+
   return (
     <div className="skill">
-      <div className="s-left">
+      <motion.div
+        initial={{ x: "-12rem" }}
+        whileInView={{ x: "0.5rem" }}
+        transition={transition}
+        className="s-left"
+      >
         <span>Knowledge</span>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
@@ -27,9 +35,15 @@ const skill = () => {
         </div>
 
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
-      </div>
+      </motion.div>
       <div className="resume">
-        <img src={resume} alt="resume" />
+        <motion.img
+          initial={{ x: "20rem" }}
+          whileInView={{ x: "-0.5rem" }}
+          transition={transition}
+          src={resume}
+          alt="resume"
+        />
       </div>
     </div>
   );

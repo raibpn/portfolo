@@ -12,7 +12,7 @@
 }
 
 .App {
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1rem;
   overflow: hidden;
   color: var(--black);
 }
@@ -42,6 +42,17 @@
   left: 56%;
   filter: blur(72px);
 }
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 0.5rem;

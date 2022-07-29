@@ -7,32 +7,40 @@ import Experience from "./Components/Experience/experience";
 import Work from "./Components/Works/work";
 import Contact from "./Components/Contact/index";
 import { useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
 export const ThemeContext = React.createContext();
 
 function App() {
+  const { scrollYProgress } = useScroll();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setIsDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
   return (
-    <div
-      className="App"
-      style={{
-        background: isDarkMode ? "black" : "",
-        color: isDarkMode ? "white" : "",
-      }}
-    >
-      <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
-        <Navbar />
-        <Intro />
-        <Work />
-        <Experience />
-        <Skill />
-        <Contact />
-      </ThemeContext.Provider>
-    </div>
+    <>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
+      <div
+        className="App"
+        style={{
+          background: isDarkMode ? "black" : "",
+          color: isDarkMode ? "white" : "",
+        }}
+      >
+        <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+          <Navbar />
+          <Intro />
+          <Work />
+          <Experience />
+          <Skill />
+          <Contact />
+        </ThemeContext.Provider>
+      </div>
+    </>
   );
 }
 

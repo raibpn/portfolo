@@ -55,9 +55,10 @@ textarea {
   min-width: 250px;
   text-align: center;
 }
-.button {
+.f-button {
   width: 6.5rem;
   height: 2rem;
+  font-size: 13px;
 }
 .c-blur1 {
   top: 1rem;
