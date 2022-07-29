@@ -35,7 +35,7 @@ const Experience = () => {
   }, [inView]);
 
   return (
-    <div className="experience" id="Experience">
+    <div className="experience" id="Experience" ref={ref}>
       <motion.div animate={animation} ref={ref} className="achievement">
         <div className="circle">2</div>
         <span>years</span>

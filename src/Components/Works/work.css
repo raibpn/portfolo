@@ -99,3 +99,23 @@
     transform: rotateX(90deg);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .works {
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+  }
+}

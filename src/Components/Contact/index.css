@@ -65,6 +65,14 @@ textarea {
   left: 8rem;
 }
 @media screen and (max-width: 480px) {
+  .works {
+    margin-top: 2rem;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .contact-form {
     padding: 0;
     flex-direction: column;
@@ -72,6 +80,9 @@ textarea {
     height: 40rem;
   }
   .c-right .user {
-    width: 16rem;
+    width: 10rem;
+  }
+  .cont-right {
+    margin-top: -540px;
   }
 }

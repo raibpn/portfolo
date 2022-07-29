@@ -14,9 +14,13 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const Work = () => {
-  const { ref, inView } = useInView({ threshold: 0.4 });
-  const transition = { duration: 2, type: "spring" };
-
+  const transition = {
+    duration: 2,
+    type: "spring",
+    stiffness: 70,
+    damping: 50,
+  };
+  const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
   const animation2 = useAnimation();
 
@@ -48,7 +52,7 @@ const Work = () => {
   }, [inView]);
 
   return (
-    <div className="works" id="Skills">
+    <div className="works" id="Skills" ref={ref}>
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>My Skills</span>
         <span>

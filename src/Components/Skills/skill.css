@@ -48,3 +48,22 @@
   top: 13rem;
   left: 18rem;
 } */
+
+@media screen and (max-width: 480px) {
+  .skill {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .resume {
+    margin-bottom: 15rem;
+  }
+}
