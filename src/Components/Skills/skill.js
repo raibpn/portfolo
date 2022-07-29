@@ -45,7 +45,7 @@ const Skill = () => {
   }, [inView]);
 
   return (
-    <div className="skill">
+    <div className="skill" id="Knowledge">
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>Knowledge</span>
         <span>

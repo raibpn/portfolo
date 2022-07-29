@@ -25,7 +25,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
       <motion.div
         initial={{ right: "12rem" }}
         whileInView={{ left: "0.5px" }}

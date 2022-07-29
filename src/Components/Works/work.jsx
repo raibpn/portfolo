@@ -48,12 +48,8 @@ const Work = () => {
   }, [inView]);
 
   return (
-    <div className="works">
-      <motion.div
-        animate={animation}
-        className="s-left"
-        ref={ref}
-      >
+    <div className="works" id="Skills">
+      <motion.div animate={animation} className="s-left" ref={ref}>
         <span>My Skills</span>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
@@ -65,11 +61,7 @@ const Work = () => {
         <button className="button cv-button">Hire Me</button>
         <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
       </motion.div>
-      <motion.div
-        animate={animation2}
-        className="stage-cube-cont"
-        ref={ref}
-      >
+      <motion.div animate={animation2} className="stage-cube-cont" ref={ref}>
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon

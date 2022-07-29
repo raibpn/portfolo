@@ -2,11 +2,12 @@
   height: 5vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
   top: 0;
 }
 .n-left {
-  flex: 1;
+  flex: 0.5;
   align-items: center;
   display: flex;
   gap: 2rem;
@@ -16,39 +17,32 @@
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
-  /* margin-top: auto; */
 }
 .n-right {
   display: flex;
-  flex: 0.5;
+  flex: 1;
   align-items: center;
-  gap: 8rem;
+  gap: 2rem;
   justify-content: flex-end;
   font-weight: 400;
 }
 .n-list {
   flex: 1;
-  margin-left: 15px;
 }
 
 .n-list > ul {
   display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
+  gap: 1rem;
 }
-/* .n-list > ul > li:hover {
-  cursor: pointer;
-  color: var(--orange);
-} */
 .n-list > ul :hover {
   color: var(--orange);
   cursor: pointer;
 }
 .n-button {
-  /* flex: 0.5; */
-  display: flex;
   align-items: center;
   margin-top: 5px;
+  margin-right: 2rem;
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {

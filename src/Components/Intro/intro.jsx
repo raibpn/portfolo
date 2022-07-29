@@ -54,7 +54,7 @@ const Intro = () => {
   }, [inView]);
 
   return (
-    <div className="intro">
+    <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
           <span>About</span>

@@ -1,10 +1,14 @@
 import React from "react";
 import Toggle from "../Toggle";
 import "./navbar.css";
+import { Link } from "react-scroll";
+// import Intro from "../Intro/intro";
+// import Skills from "../Skills/skill";
+// import Work from "../Works/work";
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div className="n-wrapper">
+    <div className="n-wrapper" id="Navbar">
       <div className="n-left">
         <div className="n-name">Portfolio</div>
         <Toggle />
@@ -12,15 +16,44 @@ const navbar = () => {
       <div className="n-right">
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Experience</li>
+            <li>
+              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" to="Skills" spy={true} smooth={true}>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="Experience"
+                spy={true}
+                smooth={true}
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="Knowledge"
+                spy={true}
+                smooth={true}
+              >
+                Knowledge
+              </Link>
+            </li>
           </ul>
         </div>
+        <Link to="contact" spy={true} smooth={true}>
+          <button className="button n-button">Contact</button>
+        </Link>
       </div>
-      <button className="button n-button">contact me</button>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;
