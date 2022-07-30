@@ -167,7 +167,7 @@
   .intro {
     flex-direction: row;
     gap: 5rem;
-    height: 34rem;
+    height: 30rem;
     margin-bottom: 2rem;
   }
   .i-right .blur {

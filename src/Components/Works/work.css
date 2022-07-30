@@ -108,6 +108,78 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 19rem;
+  }
+  .s-left {
+    display: flex;
+    flex: 1;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7);
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+  }
+}
+@media screen and (width: 540px) {
+  #Skills {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+    flex-direction: row;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+
+@media screen and (width: 768px) {
+  #Skills {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    /* max-width: 200px; */
+    justify-content: center;
+    align-items: center;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+
+@media screen and (width: 820px) {
+  #Skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
   }
   .s-left {
     margin-left: 1rem;
@@ -117,5 +189,77 @@
   .stage-cube-cont {
     width: 20%;
     height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+
+@media screen and (width: 912px) {
+  #Skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+
+@media screen and (width: 1024px) {
+  #Skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 2rem;
+  }
+}
+
+@media screen and (width: 1280px) {
+  #Skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage-cube-cont {
+    width: 20%;
+    height: 30%;
+    margin-right: 9rem;
+    left: 4rem;
+    bottom: 1rem;
   }
 }
