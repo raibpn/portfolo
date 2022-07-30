@@ -86,3 +86,27 @@ textarea {
     margin-top: -540px;
   }
 }
+
+@media screen and (min-width: 360px) {
+  .works {
+    margin-top: 2rem;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
+  }
+  .c-right .user {
+    max-width: 200px;
+  }
+  .cont-right {
+    margin-top: -540px;
+    max-width: 400px;
+  }
+}
