@@ -50,7 +50,7 @@
 } */
 
 @media screen and (max-width: 480px) {
-  .skill {
+  #Knowledge {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -62,9 +62,10 @@
     margin-left: 1rem;
     justify-content: center;
     align-items: center;
+    top: 2rem;
   }
   .resume {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -84,6 +85,72 @@
   }
   .resume {
     margin-bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .skill {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    bottom: 13rem;
+  }
+  .resume {
+    margin-bottom: 15rem;
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .skill {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    bottom: 13rem;
+  }
+  .resume {
+    margin-bottom: 15rem;
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .skill {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .s-left {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    bottom: 13rem;
+  }
+  .resume {
+    margin-bottom: 15rem;
+    transform: scale(0.9);
   }
 }
 
