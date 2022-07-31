@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
     height: 15vh;
-    margin-top: -3rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
   }
   .s-left {
@@ -168,7 +168,7 @@
     height: 30%;
     margin-right: 9rem;
     left: 4rem;
-    bottom: 4rem;
+    bottom: 18rem;
   }
 }
 
@@ -178,7 +178,7 @@
     flex-direction: row;
     justify-content: center;
     height: 15vh;
-    margin-top: -10rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
   .s-left {
@@ -191,7 +191,7 @@
     height: 30%;
     margin-right: 9rem;
     left: 4rem;
-    bottom: 4rem;
+    bottom: 17rem;
   }
 }
 
@@ -200,8 +200,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 15vh;
-    margin-top: -10rem;
+    height: 29vh;
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
   .s-left {
@@ -214,7 +214,7 @@
     height: 30%;
     margin-right: 9rem;
     left: 4rem;
-    bottom: 4rem;
+    bottom: 17rem;
   }
 }
 
@@ -241,7 +241,7 @@
   }
 }
 
-@media screen and (width: 1280px) {
+@media screen and (min-width: 1280px) {
   #Skills {
     display: flex;
     flex-direction: row;
@@ -259,7 +259,7 @@
     width: 20%;
     height: 30%;
     margin-right: 9rem;
-    left: 4rem;
+    left: 2rem;
     bottom: 1rem;
   }
 }
