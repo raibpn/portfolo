@@ -55,17 +55,17 @@ const Skill = () => {
           facilis ex, amet blanditiis
           <br /> temporibus quo!
         </span>
-        <div
+        {/* <div
           className="blur s-blur2"
           style={{ background: "var(--blueCard)" }}
-        ></div>
+        ></div> */}
         <div className="button-wrap">
           <a href={Resume} download>
             <button className="button cv-button">Download CV</button>
           </a>
         </div>
 
-        <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
+        {/* <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div> */}
       </motion.div>
       <div className="resume">
         <motion.img animate={animation2} src={resume} alt="resume" ref={ref} />

@@ -63,7 +63,7 @@ const Work = () => {
           <br /> temporibus quo!
         </span>
         <button className="button cv-button">Hire Me</button>
-        <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div>
+        {/* <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div> */}
       </motion.div>
       <motion.div animate={animation2} className="stage-cube-cont" ref={ref}>
         <div className="cubespinner">
@@ -110,10 +110,10 @@ const Work = () => {
             />
           </div>
         </div>
-        <div
+        {/* <div
           className="blur s-blur1"
           style={{ background: "var(--skyBlue)" }}
-        ></div>
+        ></div> */}
       </motion.div>
     </div>
   );

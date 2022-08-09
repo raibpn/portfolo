@@ -6,11 +6,17 @@
   margin-top: 7rem;
   margin-bottom: 5rem;
 }
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: var(--orange);
+  }
+}
 .cv-button {
   margin-top: 1rem;
 }
 .s-blur2 {
-  left: 5rem;
+  left: 4rem;
   top: 8rem;
 }
 .s-left {
