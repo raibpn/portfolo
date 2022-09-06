@@ -49,11 +49,19 @@ const Skill = () => {
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>Knowledge</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
           vitae <br /> autem minima quasi, quibusdam doloremque fuga numquam
           necessitatibus <br /> nobis aliquam aperiam! Officiis nam officia
           facilis ex, amet blanditiis
-          <br /> temporibus quo!
+          <br /> temporibus quo!  */}
+          I have gained quite a few knowledge in modern web-dev while working as{" "}
+          <br />
+          a student developer and front-end developer. I got to use various
+          tech-stack <br />
+          that are highly demanded in the front-end developer. I have also got
+          some knowledge <br />
+          at the back-end through my personal projects which supplements my
+          knwoledge even further.
         </span>
         {/* <div
           className="blur s-blur2"

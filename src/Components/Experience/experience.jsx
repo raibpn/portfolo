@@ -41,11 +41,12 @@ const Experience = () => {
         <span>years</span>
         <span>Experience</span>
       </motion.div>
-      <div className="achievement">
+      <motion.div animate={animation} ref={ref} className="achievement">
         <div className="circle">5+</div>
         <span>completed</span>
         <span>projects</span>
-      </div>
+      </motion.div>
+
       <motion.div animate={animation2} ref={ref} className="achievement">
         <div className="circle">2</div>
         <span>companies</span>

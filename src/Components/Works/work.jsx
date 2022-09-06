@@ -56,13 +56,22 @@ const Work = () => {
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>My Skills</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
           vitae <br /> autem minima quasi, quibusdam doloremque fuga numquam
           necessitatibus <br /> nobis aliquam aperiam! Officiis nam officia
           facilis ex, amet blanditiis
-          <br /> temporibus quo!
+          <br /> temporibus quo! */}
+          I have worked as a Student Test Engineer Assistant while I was doing
+          my Bachelor's Degree using .Net framework <br /> and also have worked
+          as a Front-end developer for a startup Company using React and React
+          Native as a main tech stack.
         </span>
-        <button className="button cv-button">Hire Me</button>
+        <button
+          className="button cv-button"
+          onClick={() => (window.location = "mailto:saayan.rai@gmail.com")}
+        >
+          Hire Me
+        </button>
         {/* <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div> */}
       </motion.div>
       <motion.div animate={animation2} className="stage-cube-cont" ref={ref}>
