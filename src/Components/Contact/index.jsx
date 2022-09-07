@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./index.css";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
@@ -7,23 +7,73 @@ const Contact = () => {
   const transition = { duration: 2, type: "spring" };
 
   const form = useRef();
-  const [done, setDone] = useState(false);
+  const [isDone, setIsDone] = useState(false);
+  const [formvalue, setFormValue] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+  const [formError, setFormError] = useState({});
+  const [formValidated, setFormValidated] = useState(false);
+
+  const handlevalidation = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formvalue, [name]: value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("gmail", "template_e82x7qd", form.current, "6IvF93XE_oXLGv6CT")
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    setFormError(validateForm(formvalue));
+    if (formValidated === true) {
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_e82x7qd",
+          form.current,
+          "6IvF93XE_oXLGv6CT"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setIsDone(true);
+            form.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
+
+  useEffect(() => {
+    console.log("form error is:", formError);
+    if (Object.keys(formError).length === 0 && isDone) {
+    }
+  }, [formError, formvalue, isDone]);
+
+  const validateForm = (value) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    if (!value.user_name) {
+      errors.user_name = "Please Enter Name";
+    }
+
+    if (!value.user_email) {
+      errors.email = "Please Enter Email";
+    } else if (!regex.test(value.user_email)) {
+      errors.email = "Enter Valid Email";
+    }
+    if (!value.message) {
+      errors.message = "Please Write Message";
+    }
+    if (errors !== undefined) {
+      setFormValidated(true);
+    }
+
+    return errors;
+  };
+
   return (
     <div className="contact-form" id="contact">
       <motion.div
@@ -47,16 +97,29 @@ const Contact = () => {
             name="user_name"
             className="user"
             placeholder="Name"
+            value={formvalue.user_name}
+            onChange={handlevalidation}
           />
+          <p>{formError.user_name}</p>
           <input
             type="email"
             name="user_email"
             className="user"
             placeholder="Email"
+            value={formvalue.user_email}
+            onChange={handlevalidation}
           />
-          <textarea name="message" className="user" placeholder="Message" />
+          <p>{formError.email}</p>
+          <textarea
+            name="message"
+            className="user"
+            placeholder="Message"
+            value={formvalue.message}
+            onChange={handlevalidation}
+          />
+          <p>{formError.message}</p>
           <input type="submit" value="Send" className="button f-button" />
-          <span>{done && "Thanks for Contacting me"}</span>
+          <span>{isDone && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
             style={{ background: "#ABF1FF94" }}
