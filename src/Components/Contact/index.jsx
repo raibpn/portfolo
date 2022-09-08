@@ -21,10 +21,18 @@ const Contact = () => {
     setFormValue({ ...formvalue, [name]: value });
   };
 
+  useEffect(() => {
+    console.log(formError);
+    if (Object.keys(formError).length === 0 && isDone) {
+      // console.log(formValue);
+    }
+  }, [formError]);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setFormError(validateForm(formvalue));
-    if (formValidated === true) {
+    if ( Object.keys(formError).length === 0) {
+      console.log("form validate inside send email 2:", formValidated);
       emailjs
         .sendForm(
           "gmail",
@@ -42,14 +50,9 @@ const Contact = () => {
             console.log(error.text);
           }
         );
+      console.log("set is done:", setIsDone);
     }
   };
-
-  useEffect(() => {
-    console.log("form error is:", formError);
-    if (Object.keys(formError).length === 0 && isDone) {
-    }
-  }, [formError, formvalue, isDone]);
 
   const validateForm = (value) => {
     const errors = {};
@@ -67,10 +70,6 @@ const Contact = () => {
     if (!value.message) {
       errors.message = "Please Write Message";
     }
-    if (errors !== undefined) {
-      setFormValidated(true);
-    }
-
     return errors;
   };
 
@@ -100,7 +99,7 @@ const Contact = () => {
             value={formvalue.user_name}
             onChange={handlevalidation}
           />
-          <p>{formError.user_name}</p>
+          <span>{formError.user_name}</span>
           <input
             type="email"
             name="user_email"
@@ -109,7 +108,7 @@ const Contact = () => {
             value={formvalue.user_email}
             onChange={handlevalidation}
           />
-          <p>{formError.email}</p>
+          <span>{formError.email}</span>
           <textarea
             name="message"
             className="user"
@@ -117,9 +116,14 @@ const Contact = () => {
             value={formvalue.message}
             onChange={handlevalidation}
           />
-          <p>{formError.message}</p>
+          <span>{formError.message}</span>
           <input type="submit" value="Send" className="button f-button" />
-          <span>{isDone && "Thanks for Contacting me"}</span>
+          {/* <span>{isDone ? "Thanks For Contacting Me" : null}</span> */}
+          <span>
+            {Object.keys(formError).length === 0 && isDone
+              ? "Thanks For Contacting Me"
+              : null}
+          </span>
           <div
             className="blur c-blur1"
             style={{ background: "#ABF1FF94" }}
