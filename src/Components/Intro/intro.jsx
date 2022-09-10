@@ -62,8 +62,10 @@ const Intro = () => {
           <span>
             I am a Developer and passionate about what I do. I recently
             graduated as a Bachelors Degree in Software Developer from the
-            institute KEA, Copenhagen, Denmark. I have been living in Copenhagen
-            for 4 years. I have knowledge on few of the modern web-dev tools and
+            institute KEA, Copenhagen, Denmark. Currently, I am pursuing my
+            Master's Degree education in Information Technology at Aalborg
+            University (Copenhagen). I have been living in Copenhagen for 4
+            years. I have knowledge on few of the modern web-dev tools and
             libraries i.e. React, Angular, Gatsby and other JS frameworks. I am
             also familiar with stack tech such as MEAN and MERN stack and has
             used them in my various College's and personal projects. In my
