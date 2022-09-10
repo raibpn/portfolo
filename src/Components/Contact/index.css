@@ -137,4 +137,10 @@ textarea {
   .cont-right {
     margin-top: -540px;
   }
+  .contact-form .message{
+    width: 300px;
+    max-width: 310px;
+    border-color: black;
+    border: solid;
+  }
 }
