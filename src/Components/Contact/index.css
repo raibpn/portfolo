@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: center;
 }
+.contact-form .message{
+  width: 300px;
+  max-width: 400px;
+}
 .cont-left {
   display: flex;
   gap: 0.5rem;
@@ -127,7 +131,7 @@ textarea {
     height: 40rem;
     width: 100%;
   }
-  .contact-form .user{
+  .contact-form .user {
     width: 300px;
   }
   .cont-right {

@@ -111,7 +111,7 @@ const Contact = () => {
           <span>{formError.email}</span>
           <textarea
             name="message"
-            className="user"
+            className="message"
             placeholder="Message"
             value={formvalue.message}
             onChange={handlevalidation}
