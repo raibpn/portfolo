@@ -54,7 +54,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .experience {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     transform: scale(0.7);
   }
 }

@@ -134,23 +134,23 @@
     display: flex;
     justify-content: center;
     height: 50vh;
-    margin-top: 1rem;
-    margin-bottom: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
     flex-direction: row;
   }
   .s-left {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     justify-content: center;
     align-items: center;
     display: flex;
     flex: 1;
   }
   .stage-cube-cont {
-    width: 20%;
-    height: 30%;
+    width: 5%;
+    height: 10%;
     margin-right: 9rem;
     left: 4rem;
-    bottom: 4rem;
+    bottom: 3rem;
   }
 }
 
@@ -160,7 +160,7 @@
     display: flex;
     justify-content: center;
     height: 15vh;
-    margin-top: 3rem;
+    margin-top: 30rem;
     margin-bottom: 5rem;
   }
   .s-left {
@@ -184,7 +184,7 @@
     flex-direction: row;
     justify-content: center;
     height: 15vh;
-    margin-top: 5rem;
+    margin-top: 30rem;
     margin-bottom: 5rem;
   }
   .s-left {
@@ -207,7 +207,7 @@
     flex-direction: row;
     justify-content: center;
     height: 29vh;
-    margin-top: 5rem;
+    margin-top: 25rem;
     margin-bottom: 5rem;
   }
   .s-left {
