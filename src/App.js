@@ -27,8 +27,8 @@ function App() {
       <div
         className="App"
         style={{
-          background: isDarkMode ? "black" : "",
-          color: isDarkMode ? "white" : "",
+          background: isDarkMode ? "black" : "white",
+          color: isDarkMode ? "white" : "black",
         }}
       >
         <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
