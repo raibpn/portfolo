@@ -49,11 +49,6 @@ const Skill = () => {
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>Knowledge</span>
         <span>
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-          vitae <br /> autem minima quasi, quibusdam doloremque fuga numquam
-          necessitatibus <br /> nobis aliquam aperiam! Officiis nam officia
-          facilis ex, amet blanditiis
-          <br /> temporibus quo!  */}
           I have gained quite a few knowledge in modern web-dev while working as{" "}
           <br />
           a student developer and front-end developer. I got to use various
@@ -63,17 +58,11 @@ const Skill = () => {
           at the back-end through my personal projects which supplements my
           knwoledge even further.
         </span>
-        {/* <div
-          className="blur s-blur2"
-          style={{ background: "var(--blueCard)" }}
-        ></div> */}
         <div className="button-wrap">
           <a href={Resume} download>
             <button className="button cv-button">Download CV</button>
           </a>
         </div>
-
-        {/* <div className="blur s-blur2" style={{ background: "#ABF1FF94" }}></div> */}
       </motion.div>
       <div className="resume">
         <motion.img animate={animation2} src={resume} alt="resume" ref={ref} />
