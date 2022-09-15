@@ -9,15 +9,19 @@ const Experience = () => {
   const { ref, inView } = useInView({ threshold: 0.4 });
   const animation = useAnimation();
   const animation2 = useAnimation();
+  const animation3 = useAnimation();
 
   useEffect(() => {
-    // console.log("use effect hook, inView: ", inView);
     if (inView) {
       animation.start({
         x: "0.5rem",
         transition: { transition },
       });
       animation2.start({
+        x: "0.5rem",
+        transition: { transition },
+      });
+      animation3.start({
         x: "0.5rem",
         transition: { transition },
       });
@@ -28,7 +32,11 @@ const Experience = () => {
         transition: { transition },
       });
       animation2.start({
-        x: "6rem",
+        x: "0.5rem",
+        transition: { transition },
+      });
+      animation3.start({
+        x: "12rem",
         transition: { transition },
       });
     }
@@ -41,13 +49,12 @@ const Experience = () => {
         <span>years</span>
         <span>Experience</span>
       </motion.div>
-      <motion.div animate={animation} ref={ref} className="achievement">
+      <motion.div animate={animation2} ref={ref} className="achievement">
         <div className="circle">5+</div>
         <span>completed</span>
         <span>projects</span>
       </motion.div>
-
-      <motion.div animate={animation2} ref={ref} className="achievement">
+      <motion.div animate={animation3} ref={ref} className="achievement">
         <div className="circle">2</div>
         <span>companies</span>
         <span>Experience</span>
