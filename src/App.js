@@ -8,6 +8,7 @@ import Work from "./Components/Works/work";
 import Contact from "./Components/Contact/index";
 import { useState } from "react";
 import { motion, useScroll } from "framer-motion";
+import GoToTop from "./Components/GoTop/GoToTop";
 
 export const ThemeContext = React.createContext();
 
@@ -38,6 +39,7 @@ function App() {
           <Experience />
           <Skill />
           <Contact />
+          <GoToTop />
         </ThemeContext.Provider>
       </div>
     </>

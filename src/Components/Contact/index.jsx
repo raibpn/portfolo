@@ -118,7 +118,6 @@ const Contact = () => {
           />
           <span>{formError.message}</span>
           <input type="submit" value="Send" className="button f-button" />
-          {/* <span>{isDone ? "Thanks For Contacting Me" : null}</span> */}
           <span>
             {Object.keys(formError).length === 0 && isDone
               ? "Thanks For Contacting Me"

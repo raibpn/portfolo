@@ -56,11 +56,6 @@ const Work = () => {
       <motion.div animate={animation} className="s-left" ref={ref}>
         <span>My Skills</span>
         <span>
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-          vitae <br /> autem minima quasi, quibusdam doloremque fuga numquam
-          necessitatibus <br /> nobis aliquam aperiam! Officiis nam officia
-          facilis ex, amet blanditiis
-          <br /> temporibus quo! */}
           I have worked as a Student Test Engineer Assistant while I was doing
           my Bachelor's Degree using .Net framework <br /> and also have worked
           as a Front-end developer for a startup Company using React and React
@@ -119,10 +114,6 @@ const Work = () => {
             />
           </div>
         </div>
-        {/* <div
-          className="blur s-blur1"
-          style={{ background: "var(--skyBlue)" }}
-        ></div> */}
       </motion.div>
     </div>
   );

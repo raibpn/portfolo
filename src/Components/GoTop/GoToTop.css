@@ -1,0 +1,27 @@
+.top-btn {
+  padding: 2px;
+  float: right;
+  margin-right: 2.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  margin-bottom: 1rem;
+}
+.top-btn-icon {
+  animation: icon 1.9s linear infinite alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes icon {
+  0% {
+    transform: translateY(-0.1rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
