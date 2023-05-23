@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
 }
-.contact-form .message{
+.contact-form .message {
   width: 300px;
   max-width: 400px;
 }
@@ -71,7 +71,7 @@ textarea {
 @media screen and (max-width: 480px) {
   .works {
     margin-top: 2rem;
-    height: 64vh;
+    height: 24vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,7 +104,7 @@ textarea {
     padding: 0;
     flex-direction: column;
     gap: 5rem;
-    height: 40rem;
+    height: 30rem;
   }
   .contact-form .user {
     max-width: 300px;
@@ -118,7 +118,7 @@ textarea {
 @media screen and (min-width: 375px) {
   .works {
     margin-top: 2rem;
-    height: 64vh;
+    height: 34vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +137,7 @@ textarea {
   .cont-right {
     margin-top: -540px;
   }
-  .contact-form .message{
+  .contact-form .message {
     width: 300px;
     max-width: 310px;
     border-color: black;

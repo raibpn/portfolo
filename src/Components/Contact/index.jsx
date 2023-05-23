@@ -31,14 +31,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setFormError(validateForm(formvalue));
-    if ( Object.keys(formError).length === 0) {
+    if (Object.keys(formError).length === 0) {
       console.log("form validate inside send email 2:", formValidated);
       emailjs
         .sendForm(
           "gmail",
           "template_e82x7qd",
           form.current,
-          "6IvF93XE_oXLGv6CT"
+          "M9ZgdAZquhZccy7ek"
         )
         .then(
           (result) => {
