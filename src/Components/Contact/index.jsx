@@ -31,8 +31,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setFormError(validateForm(formvalue));
-    if (Object.keys(formError).length === 0) {
-      console.log("form validate inside send email 2:", formValidated);
+  
+    if (Object.keys(validateForm(formvalue)).length === 0) {
       emailjs
         .sendForm(
           "gmail",
@@ -44,15 +44,15 @@ const Contact = () => {
           (result) => {
             console.log(result.text);
             setIsDone(true);
-            form.reset();
+            setFormValue({ user_name: "", user_email: "", message: "" }); // Clear the fields
+            form.current.reset(); // Reset the form reference (optional)
           },
           (error) => {
             console.log(error.text);
           }
         );
-      console.log("set is done:", setIsDone);
     }
-  };
+  };  
 
   const validateForm = (value) => {
     const errors = {};
